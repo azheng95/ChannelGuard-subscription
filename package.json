@@ -1,0 +1,15 @@
+{
+  "name": "channelguard-subscription",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Conservative notification channel rules for ChannelGuard.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "test": "node --test"
+  }
+}

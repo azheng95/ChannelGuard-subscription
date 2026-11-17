@@ -1,0 +1,18 @@
+[
+  {"name":"营销频道","packageName":"com.example.shop","channelName":"营销通知","channelId":"business","expectedRule":"general-marketing"},
+  {"name":"推广频道","packageName":"com.example.reader","channelName":"产品推广","channelId":"business","expectedRule":"general-promotion"},
+  {"name":"促销频道","packageName":"com.example.store","channelName":"促销优惠","channelId":"business","expectedRule":"general-sale"},
+  {"name":"广告频道","packageName":"com.example.video","channelName":"广告消息","channelId":"business","expectedRule":"general-advertising"},
+  {"name":"不按频道 ID 营销字样拦截","packageName":"com.example.shop","channelName":"普通通知","channelId":"营销","expectedRule":null},
+  {"name":"活动不在通用关键词中","packageName":"com.example.shop","channelName":"活动提醒","channelId":"business","expectedRule":null},
+  {"name":"推荐不在通用关键词中","packageName":"com.example.reader","channelName":"内容推荐","channelId":"business","expectedRule":null},
+  {"name":"普通消息不拦截","packageName":"com.example.chat","channelName":"消息通知","channelId":"messages","expectedRule":null},
+  {"name":"混合订单频道排除","packageName":"com.example.shop","channelName":"订单与营销","channelId":"business","expectedRule":null},
+  {"name":"通过 ID 排除支付频道","packageName":"com.example.shop","channelName":"推广通知","channelId":"PAYMENT_alerts","expectedRule":null},
+  {"name":"通过名称排除英文安全词","packageName":"com.example.shop","channelName":"促销 SECURITY","channelId":"business","expectedRule":null},
+  {"name":"广告过滤服务排除","packageName":"com.example.filter","channelName":"广告过滤","channelId":"service","expectedRule":null},
+  {"name":"广告拦截服务排除","packageName":"com.example.blocker","channelName":"广告拦截","channelId":"service","expectedRule":null},
+  {"name":"验证码频道排除","packageName":"com.example.shop","channelName":"广告与验证码","channelId":"business","expectedRule":null},
+  {"name":"前台服务频道排除","packageName":"com.example.shop","channelName":"营销通知","channelId":"FOREGROUND_service","expectedRule":null},
+  {"name":"英文推广 ID 不作为正向条件","packageName":"com.example.shop","channelName":"一般通知","channelId":"marketing_promo_ads","expectedRule":null}
+]

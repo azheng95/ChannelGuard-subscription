@@ -1,0 +1,94 @@
+{
+  "id": "channelguard-default",
+  "name": "ChannelGuard 通知频道规则",
+  "author": "azheng95",
+  "version": 1,
+  "updateUrl": "",
+  "updatedAt": "2026-11-17",
+  "enabled": true,
+  "groups": [
+    {
+      "key": "general",
+      "name": "通用规则",
+      "description": "保守匹配明确的营销、推广、促销、广告频道，排除重要业务及常驻服务。",
+      "enabled": true,
+      "rules": [
+        {
+          "key": "general-marketing",
+          "name": "营销",
+          "packages": ["*"],
+          "channelNames": ["营销"],
+          "channelIds": [],
+          "excludeKeywords": [
+            "订单", "支付", "交易", "退款", "物流", "验证码", "登录", "安全",
+            "通话", "下载", "上传", "同步", "前台服务", "常驻", "广告拦截", "广告过滤",
+            "order", "payment", "transaction", "refund", "logistics", "shipping",
+            "verification", "otp", "login", "authentication", "security", "call",
+            "download", "upload", "sync", "foreground", "persistent",
+            "adblock", "ad blocker", "ad filter"
+          ],
+          "matchAll": false,
+          "enabled": true
+        },
+        {
+          "key": "general-promotion",
+          "name": "推广",
+          "packages": ["*"],
+          "channelNames": ["推广"],
+          "channelIds": [],
+          "excludeKeywords": [
+            "订单", "支付", "交易", "退款", "物流", "验证码", "登录", "安全",
+            "通话", "下载", "上传", "同步", "前台服务", "常驻", "广告拦截", "广告过滤",
+            "order", "payment", "transaction", "refund", "logistics", "shipping",
+            "verification", "otp", "login", "authentication", "security", "call",
+            "download", "upload", "sync", "foreground", "persistent",
+            "adblock", "ad blocker", "ad filter"
+          ],
+          "matchAll": false,
+          "enabled": true
+        },
+        {
+          "key": "general-sale",
+          "name": "促销",
+          "packages": ["*"],
+          "channelNames": ["促销"],
+          "channelIds": [],
+          "excludeKeywords": [
+            "订单", "支付", "交易", "退款", "物流", "验证码", "登录", "安全",
+            "通话", "下载", "上传", "同步", "前台服务", "常驻", "广告拦截", "广告过滤",
+            "order", "payment", "transaction", "refund", "logistics", "shipping",
+            "verification", "otp", "login", "authentication", "security", "call",
+            "download", "upload", "sync", "foreground", "persistent",
+            "adblock", "ad blocker", "ad filter"
+          ],
+          "matchAll": false,
+          "enabled": true
+        },
+        {
+          "key": "general-advertising",
+          "name": "广告",
+          "packages": ["*"],
+          "channelNames": ["广告"],
+          "channelIds": [],
+          "excludeKeywords": [
+            "订单", "支付", "交易", "退款", "物流", "验证码", "登录", "安全",
+            "通话", "下载", "上传", "同步", "前台服务", "常驻", "广告拦截", "广告过滤",
+            "order", "payment", "transaction", "refund", "logistics", "shipping",
+            "verification", "otp", "login", "authentication", "security", "call",
+            "download", "upload", "sync", "foreground", "persistent",
+            "adblock", "ad blocker", "ad filter"
+          ],
+          "matchAll": false,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "key": "extended",
+      "name": "扩展规则",
+      "description": "预留给后续依据实际通知频道添加的规则，独立于稳定通用规则维护。",
+      "enabled": false,
+      "rules": []
+    }
+  ]
+}
